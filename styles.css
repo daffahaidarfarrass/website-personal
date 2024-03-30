@@ -1,0 +1,283 @@
+/* Mengatur ulang beberapa styling default */
+body, ul {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+  }  
+header {
+    background-color: black;
+    color: white;
+    height: 70vh;
+  }
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#profile-pic {
+  border-radius: 50%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+#menu {
+  color:white;   
+  text-decoration:none;
+  padding :10px;  
+}
+.home-content {
+    text-indent: 70px;
+    padding-top: 70px;
+}
+.contact-me-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 70px 70px;
+    background-color: gray; /* Warna biru */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-me-btn:hover {
+    background-color: white;
+    color: black; /* Warna biru yang lebih gelap saat di-hover */
+  }
+main {
+    font-family: Arial, sans-serif;
+
+}
+main p{
+  max-width: 60%;
+}
+.about{ 
+  margin: 30px;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.profile img {
+    border-radius: 50%;
+    margin-right: 50px;
+}
+.profile p {
+    font-size: 30px;
+    color: #000;
+}
+
+.skill {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+}
+.skill p{
+  margin-left: 10px;
+  font-size: 30px;
+  font-style: italic;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+.skill-card {
+  width: 200px;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 1px;
+  border-radius: 1px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 16px;
+  text-align: left;
+}
+.skill-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.skill-card img {
+  width: 80px;
+  margin-right: 10px;
+}
+.skill-card p {
+  font-size: 20px;
+  color: #000;
+}
+.slide-button {
+  text-align: right;
+  margin-right: 70px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.portfolio {
+  font-family: Arial, sans-serif;
+  color: white;
+  border: #000;
+}
+.portfolio {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2px;
+}
+.kotak-1 {
+  background-color: white;
+  max-width: 300px;
+  border-radius: 1px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.kotak-1 h2{
+  font-size: 24px;
+  color: #000;
+  margin-left: 5px;
+  padding: 15px;
+  max-width: 200px;
+}
+
+.kotak-1 p{
+  font-size: 12px;
+  color: #000;
+  margin-left: 20px;
+  max-width: 200px
+}
+.proress-bar{
+  background-color: #007bff;
+  height: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.progress {
+  height: 100%;
+  width: 76%; /* Ubah nilai ini untuk progress yang berbeda */
+  background-color: #28a745;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+.why-me {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+}
+.why-me p{
+  margin-left: 10px;
+  font-size: 30px;
+  font-style: italic;
+}
+.why-me h6{
+  margin-left: 30px;
+  font-size: 30px;
+  font-style: italic;
+}
+.why-me- {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.why-me-card {
+  width: 200px;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 1px;
+  border-radius: 1px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 16px;
+  text-align: left;
+}
+.why-me-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.why-me-card img {
+  width: 80px;
+  margin-right: 10px;
+}
+.why-me-card p {
+  font-size: 20px;
+  color: #000;
+}
+.slide-button {
+  text-align: right;
+  margin-right: 70px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0;
+  padding: 20px;
+  text-align: left;
+}
+.container h1{
+  margin-left: 200px;
+}
+form{
+  margin-left: 200px;
+  max-width: 300px;
+  margin-bottom: -130px;
+}
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #333;
+  border: none;
+  color: white;
+}
+.form-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.social-icons {
+  margin-top: 20px;
+  font-size: 15px;
+  text-align: right;
+}
+.social-icons a {
+  color: white;
+  margin-right: 38px;
+  text-align: right;
+}
+.copyright, .email{
+  margin-top: 20px;
+  font-size: 15px;
+  margin-left: 870px;
+}
+
+.menu-tambahan{
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 900px;
+  font-size: 15px;
+}
+.menu-tambahan a{
+  color: white;
+  margin-right: 10px;
+}
+  
+  
