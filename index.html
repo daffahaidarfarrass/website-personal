@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Header</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
     <header>
-        <nav id="menu">
+        <nav class="navbar">
             <img src="aset/photo_2024-03-16_08-28-11.jpg" alt="Daffa Haidar Farras" style="border-radius: 50%; width: 3%; height: 3%;">
-            <a href="#home" class="active" id="menu">Home</a>
-            <a href="#about" id="menu">About</a>
-            <a href="#skill" id="menu">Skill</a>
-            <a href="#portfolio" id="menu">Portfolio</a>
-            <a href="#why-me" id="menu">Why me</a>
-            <a href="#contact" id="menu">Contact</a><nl>
-        </nav> 
+            <div class="navbar-nav">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skill">Skill</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#why-me">Why me</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="navbar-extra">
+              <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+            </div>
+          </nav>
+          <script>
+            feather.replace();
+          </script>
+          <script src="script.js"></script>
         <div class="home" id="home">
             <div class="home-content">
                 <h1>WELCOME TO MY WEBSITE</h1>
@@ -36,7 +46,6 @@
 </main>
 <section class="skill" id="skill">
     <p>My skill</p>
-    <div class="slide-button">Slide for More ➡️</div>
     <div class="skills">
         <div class="skill-card">
             <img src="aset/python-logo.png" alt="Python Icon">
@@ -127,7 +136,6 @@
 
 <section class="why-me" id="why-me">
     <h6>What they said about me</h6>
-    <div class="slide-button">Slide for More ➡️</div>
     <div class="why-me-">
         <div class="why-me-card">
             <h1>Orang ke-1</h1>
@@ -173,6 +181,5 @@
         <p class="copyright">Daffa Haidar Farras ©2024 All Rights Reserved.</p>
     </div>
 </footer>
-
 </body> 
 </html>
