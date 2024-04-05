@@ -1,17 +1,13 @@
-/* Mengatur ulang beberapa styling default */
 body, ul {
     margin: 0;
     padding: 0;
     background-color: #f0f8ff;
+    max-width: 100%;
   }  
-header {
-    background-color: black;
-    color: white;
-    height: 70vh;
-  }
 nav {
   display: flex;
   justify-content: space-between;
+  max-width: 100%;
 }
 
 #profile-pic {
@@ -22,6 +18,111 @@ ul {
   list-style-type: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+header {
+  background-color: black;
+  color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #513c28;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+.navbar .navbar-nav a {
+  color: white;
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0 4rem;
+}
+.navbar .navbar-nav a:hover {
+  color: white;
+  font-weight: bold;
+}
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid white;
+  transform: scaleX(0);
+}
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+  transition: 0.2s linear;
+}
+.navbar .navbar-extra a {
+  color: white;
+  margin: 0 0.5rem;
+  margin-left: 20px;
+}
+.navbar .navbar-extra a:hover {
+  color: black;
+}
+#hamburger-menu {
+  display: none;
+}
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 70%;
+  }
+}
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+  #hamburger-menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgba(1, 1, 1, 0.8);
+    width: 30rem;
+    height: 100vh;
+    transition: 0.5s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: white;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+}
+/* mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 40%;
+  }
+}
 
 #menu {
   color:white;   
@@ -131,6 +232,7 @@ main p{
   max-width: 800px;
   margin: 0 auto;
   padding: 2px;
+  max-width: 100%;
 }
 .kotak-1, .kotak-2, .kotak-0 {
   background-color: white;
@@ -386,5 +488,3 @@ form{
   color: white;
   margin-right: 10px;
 }
-  
-  
