@@ -487,8 +487,3 @@ font-size: 15px;
 color: white;
 margin-right: 10px;
 }
-
-label.error{
-  color: red;
-  display: block;
-}
