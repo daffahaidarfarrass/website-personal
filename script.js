@@ -12,3 +12,39 @@ document.addEventListener("click", function (e) {
     navbarNav.classList.remove("active");
   }
 });
+
+
+/* Validation code */
+
+$(document).ready(function(){
+  $('#formvalidasi').validate({
+      rules:{
+          nama:{
+              minlength: 2
+          },
+          email:{
+              email: true,
+              required: true
+          },
+          Description: {
+              required: true
+          }
+      },
+      messages: {
+          Nama:{
+              required: "Isi namanya",
+              minlength: "Nama harus lebih dari 2 huruf"
+          },
+          Email:{
+              email: "Masukan email dengan benar",
+              required: "Masukkan email"
+          },
+          Description: {
+              required: "Masukan Pesan"
+          },
+      },
+      submitHandler: function(form) {
+          form.submit();
+      }
+  });
+});
