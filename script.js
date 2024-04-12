@@ -14,9 +14,9 @@ document.addEventListener("click", function (e) {
 });
 
 
-/* Validation code */
+/* Validation code 
 
-$(document).ready(function(){
+$(validasi).ready(function(){
   $('#formvalidasi').validate({
       rules:{
           nama:{
@@ -47,4 +47,4 @@ $(document).ready(function(){
           form.submit();
       }
   });
-});
+}); */
