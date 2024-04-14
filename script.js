@@ -13,38 +13,27 @@ document.addEventListener("click", function (e) {
   }
 });
 
+/* Validation code */
 
-/* Validation code 
+function validasi() {
+    var Name = document.form.Name.value;
+    var Email = document.form.Email.value;
+    var Description = document.form.Description.value;
+    var atposition = Email.indexOf("@");  
+    var dotposition = Email.lastIndexOf(".");
 
-$(validasi).ready(function(){
-  $('#formvalidasi').validate({
-      rules:{
-          nama:{
-              minlength: 2
-          },
-          email:{
-              email: true,
-              required: true
-          },
-          Description: {
-              required: true
-          }
-      },
-      messages: {
-          Nama:{
-              required: "Isi namanya",
-              minlength: "Nama harus lebih dari 2 huruf"
-          },
-          Email:{
-              email: "Masukan email dengan benar",
-              required: "Masukkan email"
-          },
-          Description: {
-              required: "Masukan Pesan"
-          },
-      },
-      submitHandler: function(form) {
-          form.submit();
-      }
-  });
-}); */
+    if (Name !== "" && (Email !== "" ) && Description !== "") {
+        if (atposition<1 || dotposition<atposition+2 || dotposition+2>=Email.length){
+            alert('Masukan Email yang valid')
+        }
+        if (Name.length<=2){
+            alert('Masukan Nama yang valid')
+        }
+        else{
+            alert('Terimakasih Telah Menghubungi')
+            return true;
+        }
+    } else {
+        alert('Anda harus mengisi data dengan lengkap!');
+    }
+}
