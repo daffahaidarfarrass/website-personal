@@ -162,12 +162,13 @@
 <footer> 
     <div class="container" id="contact">
         <h1>Contact Me</h1>
-        <form action="#" name="formvalidasi" id="formvalidasi">
-            <input name="Name" type="text" class="form-input" placeholder="Name" required>
-            <input name="Email" type="email" class="form-input" placeholder="Email" required>
-            <textarea name="Description" class="form-input" placeholder="Description"></textarea>
+        <form action="#" name="form" method="POST" onsubmit="return validasi()">
+            <input id="Name" name="Name" type="text" class="form-input" placeholder="Name">
+            <input id="Email" name="Email" type="text" class="form-input" placeholder="Email">
+            <textarea id="Description" name="Description" class="form-input" placeholder="Description"></textarea>
             <button type="submit" class="form-button" value="submit">Send</button>
         </form>
+        <script src="script.js"></script>
         <p class="email">Daffahaidarfarras@gmail.com</p>
         <div class="social-icons">
             <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
